@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  font-family: Play, sans-serif;
+  color: #313538;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+button,
+a,
+input {
+  outline: none;
+}
+
+body {
+  background-color: #D4D6D7;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+/* УБИРАЕМ СТРЕЛКИ У input-number
+ Это для браузера Chrome: */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+ /* Это для браузера Firefox: */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
+ /* Для других */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+section {
+  display: none;
+  opacity: 0;
+}
